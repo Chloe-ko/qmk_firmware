@@ -103,7 +103,7 @@
         LED_UP, // 78, Up, k35
         LED_LEFT, // 79, Left, k03
         LED_ENT, // 80, Enter, ka4
-        LED_DOWN // 81, Down, k73
+        LED_DOWN, // 81, Down, k73
         LED_L1, // 82, LED, l01
         LED_R1, // 83, LED, l11
         LED_L2, // 84, LED, l02
@@ -119,7 +119,7 @@
         LED_L7, // 94, LED, l07
         LED_R7, // 95, LED, l17
         LED_L8, // 96, LED, l08
-        LED_R8, // 97, LED, l18
+        LED_R8 // 97, LED, l18
     };
 
     const uint8_t LED_LIST_WASD[] = { LED_W, LED_A, LED_S, LED_D };
