@@ -1,4 +1,4 @@
-SRC += jonavin.c
+SRC += neneya.c
 ifeq ($(strip $(ENCODER_DEFAULTACTIONS_ENABLE)), yes)
     OPT_DEFS += -DENCODER_DEFAULTACTIONS_ENABLE
 endif
