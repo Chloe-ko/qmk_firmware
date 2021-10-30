@@ -16,7 +16,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #include QMK_KEYBOARD_H
 #include "rgb_matrix_map.h"
-#include "jonavin.h"
+#include "neneya.h"
 
 enum custom_keycodes {
 	NANI = SAFE_RANGE,

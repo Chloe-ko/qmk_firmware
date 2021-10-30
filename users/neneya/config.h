@@ -1,5 +1,4 @@
-/* Copyright 2021 Gigahawk
- * Modified 2021 by usrfriendly for vial-qmk
+/* Copyright 2021 Jonavin Eng
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -17,11 +16,16 @@
 
 #pragma once
 
-#include "config_common.h"
+#define TAPPING_TOGGLE 2           // TT () set to two taps
 
-#define DRIVER_1_LED_TOTAL 66
-#define DRIVER_2_LED_TOTAL 32
-#define DRIVER_LED_TOTAL (DRIVER_1_LED_TOTAL + DRIVER_2_LED_TOTAL)
+/*  Handle GRAVESC combo keys */
+#define GRAVE_ESC_ALT_OVERRIDE     // Always send Escape if Alt is pressed
+#define GRAVE_ESC_CTRL_OVERRIDE    // Always send Escape if Control is pressed
 
-#define RGB_MATRIX_FRAMEBUFFER_EFFECTS
-#define RGB_MATRIX_KEYPRESSES
+#define TAPPING_TERM 180
+#define TAPPING_TERM_PER_KEY
+
+#ifdef RGB_MATRIX_ENABLE
+    #define RGB_MATRIX_STARTUP_MODE RGB_MATRIX_SOLID_COLOR
+    #define RGB_DISABLE_WHEN_USB_SUSPENDED
+#endif
